@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    printf("Needs\n"),
-    fprintf("need_dark_mode\n"),
-    fprintf("need_accessibillity\n"),
-    fprintf("block_counter\n"),
-    fprintf("file_counter_need\n");
+    printf("Needs\n");
+    fprintf(stdout, "need_dark_mode\n");
+    fprintf(stdout, "need_accessibility\n");
+    fprintf(stdout, "block_counter\n");
+    fprintf(stdout, "file_counter_need\n");
     return 0;
 }
