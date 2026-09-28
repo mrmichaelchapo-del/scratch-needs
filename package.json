@@ -1,0 +1,29 @@
+{
+  "name": "scratch-needs",
+  "version": "1.0.0",
+  "description": "A browser extension that adds features the Scratch community needs.",
+  "main": "src/main.js",
+  "scripts": {
+    "build:needs": "gcc needs/index.c -o needs/build && ./needs/build > build/needs_opcodes.txt",
+    "build": "npm run build:needs && node scripts/generateManifest.js",
+    "dev": "npm run build && web-ext run",
+    "lint": "eslint src"
+  },
+  "keywords": [
+    "scratch",
+    "extension",
+    "addons",
+    "needs",
+    "compiler",
+    "opcodes"
+  ],
+  "author": "Michael",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "web-ext": "^7.8.0"
+  }
+}
