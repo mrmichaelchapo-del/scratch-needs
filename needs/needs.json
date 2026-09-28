@@ -1,0 +1,26 @@
+{
+  "needs_source": "needs/index.c",
+  "opcode_output": "build/needs_opcodes.txt",
+  "features": [
+    {
+      "opcode": "need_dark_mode",
+      "module": "features/dark_mode.js",
+      "enabled": true
+    },
+    {
+      "opcode": "need_accessibility",
+      "module": "features/accessibility.js",
+      "enabled": true
+    },
+    {
+      "opcode": "block_counter",
+      "module": "features/block_counter.js",
+      "enabled": true
+    },
+    {
+      "opcode": "file_counter_need",
+      "module": "features/file_counter.js",
+      "enabled": true
+    }
+  ]
+}
